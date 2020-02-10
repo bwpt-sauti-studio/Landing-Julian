@@ -1,35 +1,31 @@
-// Navigation code here
+.logo-connect {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 6%;
+border-bottom: 2px solid @silver;
 
-nav {
-    width: 100%;
-    background-color: rgba(246, 246, 246, 0.9);
-    z-index: 1;
-    // position: fixed;
 
-    .nav {
-      width: 800px;
-      margin: 0 auto;
-      .flex-nav2;
-
-      // @media @phone {	
-      //   width: 80%;
-      // }
-
-      h1 {
-        font-size: 3rem;
-        margin: 20px 0;
-      }
-
-      .navigation {
-        width: 100%;
-        .flex-nav;
-        padding: 10px 0;
-
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.4rem;
-          }
-        }
-      }
+    .bar {
+        display        : flex;
+        justify-content: space-evenly;
+       
+  @media(max-width: 500px) {
+      flex-wrap: wrap;
   }
+    }
+
+    a {
+        color: @font-green;
+
+        &:hover {
+            color: @god-blue;
+        }
+
+        margin          : 1%;
+        padding         : 2%;
+        font-size       : 3rem;
+        text-decoration : none;
+        padding-right: 10%;
+    }
+}

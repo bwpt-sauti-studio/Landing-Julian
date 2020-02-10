@@ -1,11 +1,17 @@
-// Footer Styles
-footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer {
+    display        : flex;
+    justify-content: center;
+    width          : 100%;
+    border-top     : 2px solid silver;
+    padding        : 2%;
+    .bottom-nav, a {
+        text-align: center;
+        font-size : 1.6rem;
+        padding   : 20px;
+        text-decoration: none;
+        color: @god-blue;
+        &:hover {
+    color: @god-blue;
+}
+    }
 }
